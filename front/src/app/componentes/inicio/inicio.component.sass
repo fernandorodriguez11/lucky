@@ -1,0 +1,145 @@
+.inicio //Vista movil
+   height: 100vh
+   width: 100vw
+   background-image: url("src/assets/imagenes/fondo.png")
+   background-size: cover
+   font-family: 'Barlow-Medium', sans-serif
+   
+   
+   &__contenido
+      height: 100%
+      display: flex
+      flex-direction: row
+      justify-content: center
+   
+   &__contenedor
+      margin-top: 32em
+      height: 30%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+     
+
+   &__titulo
+      color: #0e363d
+      font-size: 20pt
+      text-align: center
+      margin-top: .5em
+      
+   
+   &__botones
+      width: 260px
+      text-align: center
+      background-color: rgb(1,116 ,142 )
+      height: 50px
+      color: white
+      font-size: 21px
+      border-radius: 7px
+      border: 1px solid rgb(1,116 ,142 )
+
+   &__texto
+      color: rgb(14,54 ,61 )
+      font-size: 16px
+      text-align: center
+
+   @media screen and ( orientation: landscape ) //Movil horizontal
+      width: 100vw
+      height: 100vh
+      background-image: url("src/assets/imagenes/fondo.png")
+      background-size: contain
+      background-repeat: no-repeat
+
+      &__contenedor
+         margin-top: 4em
+         height: 60vh
+         margin-left: 1.5%
+
+   
+   // @media screen and(min-width: 768px) //Vista Tablet 
+   //    width: 100vw
+   //    height: 100vh
+   //    background-image: url("src/assets/imagenes/fondo.png")
+   //    background-size: cover
+
+
+   //    &__contenedor
+   //       margin-top: 85%
+   //       height: 30%
+         
+         
+   //    &__titulo
+   //       color: #0e363d
+   //       font-size: 30pt
+   //       text-align: center
+
+   //    &__botones      
+   //       width: 350pt
+   //       text-align: center
+   //       background-color: rgb(1,116 ,142 )
+   //       height: 60px
+   //       color: white
+   //       font-size: 21pt
+   //       border-radius: 10pt
+   //       border: 1px solid rgb(1,116 ,142 )
+
+      &__texto
+         font-size: 17pt
+
+      //******Tablet horizontal*******
+   @media screen and(min-width: 992px) 
+      width: 100vw
+      height: 100vh
+      background-image: url("src/assets/imagenes/fondo.png")
+      background-size: contain
+
+
+      &__contenedor
+         margin-top: 10em
+         height: 50%
+         margin-left: 28em
+   
+      &__titulo
+         color: rgb(14,54 ,61 )
+         font-size: 30pt
+         text-align: center
+
+      &__botones      
+         width: 350pt
+         text-align: center
+         background-color: rgb(1,116 ,142 )
+         height: 60px
+         color: white
+         font-size: 21pt
+         border-radius: 10pt
+         border: 1px solid rgb(1,116 ,142 )
+
+      &__texto
+         font-size: 17pt
+
+         //********Vista Desktop**********
+   @media screen and(min-width: 1200px) 
+      width: 100vw
+      height: 100vh
+      background-image: url("src/assets/imagenes/fondo.png")
+      background-size: contain
+
+      &__contenedor
+         margin-top: 7em
+         height: 60%
+         margin-left: 1.5%
+
+      &__titulo
+         font-size: 40pt
+
+      &__botones      
+         width: 400pt
+         text-align: center
+         background-color: rgb(1,116 ,142 )
+         height: 45pt
+         color: white
+         font-size: 27pt
+         border-radius: 10pt
+         border: 1px solid rgb(1,116 ,142 )
+
+      &__texto
+         font-size: 17pt   

@@ -1,0 +1,111 @@
+.registro {
+  padding: 1em;
+}
+
+.registro__entrada {
+  padding: .2em;
+  margin-bottom: 1em;
+  border-style: none;
+  border-bottom: 1px solid gray;
+  font-size: 1em;
+  width: 95%;
+  font-family: 'Barlow-Medium', sans-serif;
+}
+
+.registro__btn {
+  width: 95%;
+  background: #fa9c93;
+  font-family: 'Barlow-Medium', sans-serif;
+  font-size: 1.33em;
+  color: white;
+  margin-top: 3em;
+  border-radius: 5px;
+  border-style: none;
+  height: 40pt;
+}
+
+.registro__privacidad {
+  font-family: 'Barlow-Medium', sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.registro__check {
+  border-radius: 12px;
+  padding: 1em;
+  margin-right: .5em;
+  margin-top: 2em;
+}
+
+.registro__p {
+  font-size: 20pt;
+  font-family: 'Barlow-Medium', sans-serif;
+  color: #01748e;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.registro__h2 {
+  color: black;
+  font-size: 16pt;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 1.5em;
+  font-family: 'Barlow-Regular', sans-serif;
+}
+
+@media screen and (orientation: landscape) {
+  .registro {
+    padding: 1em;
+    margin-left: 3%;
+  }
+  .registro__privacidad {
+    margin-left: .5em;
+  }
+  .registro__check {
+    width: 5vw;
+    height: 5vh;
+    margin-bottom: -1em;
+    padding: 0;
+  }
+  .registro__checkPriv {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .registro {
+    padding: 1em;
+    margin-left: 30%;
+  }
+  .registro__privacidad {
+    margin-left: .3em;
+  }
+  .registro__check {
+    width: 3vw;
+    height: 3vh;
+    margin-right: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+  .registro__checkPriv {
+    border: 1px solid black;
+    margin-top: 5em;
+  }
+  .registro__entrada {
+    font-size: 1em;
+    width: 50%;
+    font-family: 'Barlow-Medium', sans-serif;
+  }
+  .registro__btn {
+    width: 50%;
+  }
+  .registro__h2 {
+    text-align: center;
+    margin-left: -50%;
+  }
+}
+/*# sourceMappingURL=editar-perfil.component.css.map */

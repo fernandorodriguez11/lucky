@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="adopcion">
+
+      <div class="adopcion__flexsearch" [routerLink]="['/filtros']">
+        <div class="adopcion__flexsearch--wrapper">
+            <form class="adopcion__flexsearch--form" action="#" method="post">
+              <div class="adopcion__flexsearch--input-wrapper">
+                <input class="adopcion__flexsearch--input" type="search" placeholder="Buscar">
+                <figure class="adopcion--input">
+                  <img src="../../../assets/home/buscar.png" class="adopcion__foto" >
+              </figure>
+              </div>
+            </form>
+          </div>
+      </div>
+
+      <div class="adopcion__text">
+        <div class="adopcion__icon">
+          <img src="../../../assets/iconos/mS@3x.png" class="adopcion__icono">
+          </div>
+        <h2>Mis mascotas</h2><br>
+      </div>
+
+      <div>
+        <p class="adopcion__textP" >Accede al perfil de tus mascotas </p>
+      </div>
+
+      <div class="adopcion__imgcab">
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="adopcion__cabecera">
+                <button class="adopcion__boton">
+                  <img src="../../../assets/home/perrop.png">
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="adopcion__cabecera">
+                <button class="adopcion__boton">
+                  <img src="../../../assets/home/ave_2@2x.png">
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="adopcion__cabecera">
+                <button class="adopcion__boton">
+                  <img src="../../../assets/home/ave_2.png">
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Por hacer -->
+      <div class="adopcion__puntos">
+        <img src="../../../assets/home/slideCopy.png">
+      </div>
+      <div class="adopcion__pasar"></div>
+
+      <div class="adopcion__barra">
+        <div class="adopcion__letra">
+          <button class="adopcion__barra1">estado de la adopcion
+            <div class="adopcion__arrow">
+              <img src="../../../assets/home/arrow.png">
+            </div>
+          </button>
+
+        </div>
+      </div>
+
+      <div class="adopcion__animaltext">
+        <div class="row">
+          <div class="col-10 col-xs-10">
+            <p>Animales en adopcion</p>
+          </div>
+          <div class="col-2 col-xs-2">
+            <img class="adopcion__filtros" src="../../../assets/home/filtros.png">
+          </div>
+        </div>
+
+      </div>
+      <div *ngFor="let animales of animal; let i = index">
+        <figure class="adopcion__adopcion" (click)="redirige(animales._id)">
+          <img class="adopcion__imagenes" src="{{animales.foto}}" alt="logo">
+          <figcaption class="adopcion__figcaptions">
+            <p class="adopcion__nombreAnimal">{{animales.nombre}}</p>
+            <div class="adopcion__lugarAnimal">
+              <p>{{animales.ciudad}}</p>
+              <p class="adopcion__distancia">{{animales.datos.peso}}</p>
+            </div>
+          </figcaption>
+      </figure>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+<app-footer></app-footer>
+
+<div *ngIf="existeError === true">
+  <p>{{mensajeError}}</p>
+</div>

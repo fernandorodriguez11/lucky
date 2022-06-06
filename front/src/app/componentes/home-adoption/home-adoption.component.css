@@ -1,0 +1,93 @@
+.contenedora {
+  width: 95vw;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contenedora__bienvenido {
+  margin-top: 10%;
+  font-family: "Barlow-Medium", sans-serif;
+  font-size: 25pt;
+  color: #01748e;
+  padding-top: 2%;
+}
+
+.contenedora__carrousel {
+  background-color: #d8d8d8;
+  -webkit-box-shadow: 0 3pt 6pt 0pt;
+          box-shadow: 0 3pt 6pt 0pt;
+  margin-top: 10%;
+  font-family: "Barlow-Medium", sans-serif;
+  padding: 1em;
+}
+
+.contenedora__imagenCarrousel {
+  widows: 48pt;
+  height: 48pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contenedora__contenidoCarrousel {
+  padding-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contenedora__tituloCarrousel {
+  font-size: 16pt;
+  color: #01748e;
+}
+
+.contenedora__textoCarrousel {
+  font-family: "Barlow-Regular", sans-serif;
+  font-size: 10pt;
+  color: #2d2d2d;
+}
+
+.contenedora__titulo {
+  margin-top: 10%;
+  border-top: 1px solid grey;
+  padding-top: 5%;
+}
+
+.contenedora__texto {
+  color: #01748e;
+  font-size: 1em;
+  font-family: "Barlow-Medium", sans-serif;
+}
+
+.contenedora__adopcion {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.contenedora__imagenes {
+  width: 100%;
+}
+
+.contenedora__figcaptions {
+  background-color: #fa9c93;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 4pt;
+  font-family: "Barlow-Medium", sans-serif;
+}
+/*# sourceMappingURL=home-adoption.component.css.map */

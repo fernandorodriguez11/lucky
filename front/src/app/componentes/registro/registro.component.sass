@@ -1,0 +1,82 @@
+.registro  //Vista Movil
+    padding: 1em
+    &__entrada 
+        padding: .2em
+        margin-bottom: 1em
+        border-style: none
+        border-bottom: 1px solid gray 
+        font-size: 1em
+        width: 95%
+        font-family: 'Barlow-Medium', sans-serif
+    &__btn
+        width: 95%
+        background: #fa9c93
+        font-family: 'Barlow-Medium', sans-serif
+        font-size: 1.33em
+        color: white
+        margin-top: 3em
+        border-radius: 5px
+        border-style: none
+        height: 40pt
+    &__privacidad
+        font-family: 'Barlow-Medium', sans-serif
+        font-size: 12px
+        color: black
+    &__check
+        border-radius: 12px
+        padding: 1em
+        margin-right: .5em
+        margin-top: 2em
+    &__p
+        font-size: 20pt
+        font-family: 'Barlow-Medium', sans-serif
+        color: #01748e
+        margin-bottom: 1em
+        margin-top: 1em
+    &__h2 
+        color: black
+        font-size: 16pt
+        text-align: center
+        margin-bottom: 2em
+        margin-top: 1.5em
+        font-family: 'Barlow-Regular', sans-serif
+
+    @media screen and ( orientation: landscape ) //Vista Movil Horizontal
+        padding: 1em
+        margin-left: 3%
+        &__privacidad
+            margin-left: .5em
+
+        &__check
+            width: 5vw
+            height: 5vh
+            margin-bottom: -1em
+            padding: 0
+
+        &__checkPriv
+            flex-direction: row
+
+    @media screen and(min-width: 1200px) //Vista Desktop
+        padding: 1em
+        margin-left: 30%
+
+        &__privacidad
+            margin-left: .3em
+        &__check
+            width: 3vw
+            height: 3vh
+            margin-right: 0
+            padding: 0
+            margin-top: 0
+        &__checkPriv
+            border: 1px solid black
+            margin-top: 5em
+        &__entrada 
+            font-size: 1em
+            width: 50%
+            font-family: 'Barlow-Medium', sans-serif
+        &__btn
+            width: 50%
+        &__h2
+            text-align: center
+            margin-left: -50%

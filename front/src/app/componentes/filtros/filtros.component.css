@@ -1,0 +1,250 @@
+@charset "UTF-8";
+.entero {
+  padding: 1em;
+}
+
+.filtros {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Barlow-Regular", sans-serif;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.filtros__texto {
+  color: #01748e;
+  text-align: center;
+}
+
+.filtros__ciudades {
+  text-align: left;
+  font-size: 1em;
+  padding-top: 1em;
+}
+
+.filtros__ciudad, .filtros__edad {
+  font-family: "Barlow-Regular", sans-serif;
+  font-size: 16pt;
+  color: #01748e;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.filtros__especie, .filtros__sexo, .filtros__tamaño {
+  text-align: left;
+  font-family: "Barlow-Regular", sans-serif;
+  font-size: 16pt;
+  color: #01748e;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.filtros__edades {
+  text-align: left;
+  font-size: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.filtros__tipos {
+  text-align: left;
+  font-size: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.filtros__contenedor {
+  font-size: 1em;
+}
+
+.filtros__botones {
+  width: 7em;
+  height: 8em;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 1em;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 10px;
+  font-family: "Barlow-Regular", sans-serif;
+  border: 2px solid #bdd2d6;
+  color: #01748e;
+}
+
+.filtros__botones img {
+  padding: 1em;
+}
+
+.filtros__insecto {
+  line-height: 12px;
+}
+
+.filtros__especies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.filtros__sexos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  padding: 1%;
+}
+
+.filtros__tamaños {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.filtros__boton {
+  background-color: #fa9c93;
+  width: 100%;
+  margin-top: 5%;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: "Barlow-Regular", sans-serif;
+  padding: 1em;
+  border: solid;
+}
+
+.filtros__select {
+  background-color: white;
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 15em;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.filtros__select2 {
+  background-color: white;
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 15em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.filtros__fila {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filtros__borrar {
+  background-color: white;
+  width: 100%;
+  margin-top: 5%;
+  border-radius: 10px;
+  color: #fa9c93;
+  font-size: 18px;
+  font-family: "Barlow-Regular", sans-serif;
+  padding: 1em;
+  border: solid;
+}
+
+@media screen and (orientation: landscape) {
+  .filtros__texto {
+    text-align: center;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .filtros__sexo, .filtros__tamaño {
+    text-align: center;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .filtros__ciudad, .filtros__especie, .filtros__edad {
+    text-align: center;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .filtros__select, .filtros__select2 {
+    margin-left: 40%;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filtros {
+    width: 30%;
+    margin-left: 35%;
+  }
+  .filtros__select, .filtros__select2 {
+    width: 55%;
+    margin-left: 27%;
+  }
+  .filtros__botones {
+    margin-bottom: 1em;
+    margin-left: 3em;
+  }
+}
+
+.img {
+  position: absolute;
+  left: 60%;
+}
+
+@media screen and (orientation: landscape) {
+  .img {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img {
+    margin-left: -3.2em;
+  }
+}
+/*# sourceMappingURL=filtros.component.css.map */

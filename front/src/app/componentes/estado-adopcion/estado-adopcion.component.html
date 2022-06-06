@@ -1,0 +1,95 @@
+<div class="estado">
+
+  <div class="estado__flexsearch">
+    <div class="estado__flexsearch--wrapper">
+      <form class="estado__flexsearch--form" action="#" method="post">
+        <div class="estado__flexsearch-input--wrapper">
+          <input class="estado__flexsearch--input" type="search" placeholder="Buscar">
+          <figure class="estado__--input">
+            <img src="../../../assets/home/buscar.png" class="adopcion__foto">
+
+          </figure>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+      <div class="estado__containers">
+        <div class="estado__img_arrow">
+          <img src="../../../assets/home/arrow.png">
+        </div>
+
+        <div *ngFor="let adopciones of adopcion; let i = index;">
+          <div class="estado__contenedor">
+            <div class="estado__cabecera">
+
+              <p class ="estado__texto">Adopcion de {{animal.nombre}}</p>
+
+              <p [ngClass]="cambiaColores()" class="estado__estado"> {{adopciones.proceso}}</p> <div class="estado__ circulo"></div>
+
+            </div>
+
+            <div class="estado__imagenYtexto">
+
+              <div class="estado__imagen">
+                <img class="estado__img" src="{{animal.foto}}">
+              </div>
+
+              <div class="estado__textos">
+                <p class="estado__nombreAnimal">Nombre: {{animal.nombre}}</p>
+                <p class="estado__nombreAnimal"> ciudad : {{animal.ciudad}}</p>
+                <p class="estado__nombreAnimal"> sexo : {{animal.datos.sexo}}</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+<!--
+        <div class="estado__imgBlue">
+          <h5>Adopcion de {{animales.nombre}}</h5>
+
+          <div *ngFor="let animales of animal; let i = index">
+
+          <img src="src="{{animales.foto}}" alt="logo" (click)="redirige(animales._id)">
+          <p class="estado__lugar-adoptar">{{animales.nombre}}</p>
+          <p class="estado__lugar-adoptar">{{animales.ciudad}}</p>
+          <p class="estado__lugar-adoptar">{{animales.sexo}}</p>
+        </div>
+
+        </div>-->
+        <!--
+<p>{{animal._id}}</p>
+
+        <div *ngFor="let adopciones of adopcion; let i = index" >
+        <div class="estado__imgBlue">
+          <h5>Adopcion de {{animal.nombre}} {{adopciones.proceso}}</h5>
+          <div *ngFor="let adopciones of animal; let i = index">
+
+          <img src="{{animal.foto}}">
+          <div class="estado__lugar-adopcion">
+            <p class="adopcion__nombreAnimal">{{animal.nombre}}</p>
+            <p class="estado__lugar-adoptar">{{adopciones.ciudad}}</p>
+            <p class="estado__lugar-adoptar">{{adopciones.datos.sexo}}</p>
+          </div>
+        </div>
+        </div>
+      </div  >
+
+        <div class="estado__imgBlue">
+          <h5>Adopcion de Felipe</h5>
+          <img src="../../../assets/home/fotoAnimal_3.jpg">
+          <div class="estado__lugar-adopcion">
+            <div *ngFor="let animales of animal; let i = index">
+            <p class="estado__lugar-adoptar">{{animales.nombre}}</p>
+            <p class="estado__lugar-adoptar">{{animales.ciudad}}</p>
+            <p class="estado__lugar-adoptar">{{animales.adopcion}}</p>
+          </div>
+        </div>
+      </div>-->
+      <app-footer></app-footer>
+</div>

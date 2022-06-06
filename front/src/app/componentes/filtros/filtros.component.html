@@ -1,0 +1,163 @@
+<div class="wrapper entero">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="filtros">
+        <div class="filtros__titulo">
+          <div class="row">
+            <div class="col-10 col-xs-10">
+              <div class="filtros__texto">
+                <p>Filtros</p>
+              </div>
+
+            </div>
+            <div class="col-2 col-xs-2" [routerLink]="['/adopcion']">
+              <span class="equix">
+                <img src="../../../assets/imagenes/cerrar.png">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="filtros__contenedor">
+          <div class="filtros__ciudades">
+            <p class="filtros__ciudad">Ciudad</p>
+            <select id="ciudad" class="filtros__select">
+              <option value="Madrid" >Madrid</option>
+              <option>Bilbao</option>
+              <option>Valencia</option>
+              <option>Cáceres</option>
+            </select>
+            <img class="img" src="../../../assets/imagenes/arrow.png">
+          </div>
+          <div class="filtros__especies">
+            <p class="filtros__especie">Especie</p>
+            <div class="">
+              <div class="row">
+                <div class="col-3 col-xs-3">
+                  <button class="filtros__botones" data-tipo="perro" (click)="muestraAlgo()"><img id="perro" src="../../../assets/iconos/perrop.png" alt="Perro" /> Perro
+                  </button>
+                </div>
+                <div class="col-3 col-xs-3">
+                  <button class="filtros__botones" data-tipo="gato" (click)="muestraAlgo()"><img id="gato" src="../../../assets/iconos/cat.png" alt="Gato" /> Gato
+                  </button>
+                </div>
+                <div class="col-3 col-xs-3">
+                  <button class="filtros__botones" data-tipo="conejo" (click)="muestraAlgo()"><img src="../../../assets/iconos/group12.png" alt="Conejo" /> Conejo
+                  </button>
+                </div>
+                <div class="col-3 col-xs-3">
+                  <button class="filtros__botones" data-tipo="cobaya" (click)="muestraAlgo()"><img src="../../../assets/iconos/067Hamster.png" alt="Cobaya" />
+                    Cobaya
+                  </button>
+                </div>
+              </div>
+              <div class="">
+                <div class="row">
+                  <div class="col-3 col-xs-3">
+                    <button class="filtros__botones" data-tipo="mamifero" (click)="muestraAlgo()"><img id="mamifero" src="../../../assets/iconos/035CoatiCopy.png"
+                        alt="Mamifero Pequeño" /> Mamifero Pequeño</button>
+                  </div>
+                  <div class="col-3 col-xs-3">
+                    <button class="filtros__botones" data-tipo="huron" (click)="muestraAlgo()"><img src="../../../assets/iconos/group6.png" alt="Hurón" /> Hurón
+                    </button>
+                  </div>
+                  <div class="col-3 col-xs-3">
+                    <button class="filtros__botones" data-tipo="pez" (click)="muestraAlgo()"><img src="../../../assets/iconos/057Fish2.png" alt="Péz" /> Pez
+                    </button>
+                  </div>
+                  <div class="col-3 col-xs-3">
+                    <button class="filtros__botones" data-tipo="reptil" (click)="muestraAlgo()"><img src="../../../assets/iconos/group8.png" alt="Reptil" /> Reptil
+                    </button>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="row">
+                    <div class="col-3 col-xs-3">
+                      <button class="filtros__botones" data-tipo="anfibio" (click)="muestraAlgo()"><img id="anfibio" src="../../../assets/iconos/anfibio.png" alt="Anfibio" />
+                        Anfibio
+                      </button>
+                    </div>
+                    <div class="col-3 col-xs-3">
+                      <button class="filtros__botones filtros__insecto" data-tipo="aracnido" (click)="muestraAlgo()"><img id="aracnido" src="../../../assets/iconos/group5.png"
+                          alt="Arácnido o Insecto"/>
+                        Arácnido o Insecto </button>
+                    </div>
+                    <div class="col-3 col-xs-3">
+                      <button class="filtros__botones" data-tipo="ave" (click)="muestraAlgo()"><img id="ave" src="../../../assets/iconos/ave.png" alt="Ave" /> Ave
+                      </button>
+                    </div>
+                    <div class="col-3 col-xs-3">
+                    </div>
+                  </div>
+                  <div class="col-3 col-xs-3">
+                  </div>
+                </div>
+                <div class="filtros__tipos" *ngIf="selectTipo === true">
+                  <p class="filtros__edad" id="tipoTitulo">{{textoSelect}}</p>
+                  <select id="tipos" class="filtros__select2">
+                  </select>
+                  <img class="img" src="../../../assets/imagenes/arrow.png">
+                </div>
+                <div class="filtros__edades">
+                  <p class="filtros__edad">Edad</p>
+                  <select id="edad" class="filtros__select2">
+                    <option>Joven</option>
+                    <option>Mediana edad</option>
+                    <option>Viejo</option>
+                  </select>
+                  <img class="img" src="../../../assets/imagenes/arrow.png">
+                </div>
+                <p class="filtros__sexo">Sexo</p>
+                <div class="filtros__sexos">
+                  <div class="row">
+                    <div class="col-6 col-xs-6">
+                      <button  data-genero="hembra" (click)="seleccionaGenero()" class="filtros__botones">
+                        <img id="hembra" src="../../../assets/iconos/female.png" alt="Hembra" /> Hembra
+                      </button>
+                    </div>
+                    <div class="col-6 col-xs-6">
+                      <button  data-genero="macho" (click)="seleccionaGenero()" class="filtros__botones">
+                        <img id="macho" src="../../../assets/iconos/male.png" alt="Macho" /> Macho
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="filtros__tamaño">Tamaño</p>
+                <div class="filtros__tamaños">
+                  <div class="row">
+                    <div class="col-4 col-xs-4">
+                      <button data-width ="pequeño" (click)="seleccionaMedida()" class="filtros__botones"><img id="small" src="../../../assets/iconos/group_6.png" alt="Pequeño" />
+                        Pequeño </button>
+                    </div>
+                    <div class="col-4 col-xs-4">
+                      <button data-width ="mediano" (click)="seleccionaMedida()" class="filtros__botones"><img id ="mediano" src="../../../assets/iconos/group_6@2x.png" alt="Mediano" />
+                        Mediano </button>
+                    </div>
+                    <div class="col-4 col-xs-4">
+                      <button data-width ="grande" (click)="seleccionaMedida()" class="filtros__botones"><img id="grande" src="../../../assets/iconos/group_6@3x.png" alt="Grande" />
+                        Grande </button>
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="botonFiltros === false">
+                  <div>
+                    <button type="submit" class="filtros__boton" (click)="aplicar()"> Aplicar </button>
+                  </div>
+                </div>
+                <div class="botones" *ngIf="botonFiltros === true">
+                  <div class="row">
+                    <div class="col-6 col-xs-6">
+                      <button type="button" class="filtros__borrar" (click)="borrarFiltros()">Borrar Filtros</button>
+                    </div>
+                    <div class="col-6 col-xs-6">
+                      <button type="submit" class="filtros__boton" (click)="aplicarFiltros()"> Aplicar </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

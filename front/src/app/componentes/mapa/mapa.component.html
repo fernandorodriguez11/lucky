@@ -1,0 +1,20 @@
+          <div class="mapa">
+            <div class="mapa__contenedor">
+              <input type="text" placeholder="¿Qué estas buscando?" class="mapa__buscar">
+              <a [routerLink]="['/filtros']"><img src="../../../assets/iconos/filtros.png" alt="Preferencias"
+                  class="mapa__filtro"></a>
+
+              <div class="mapa__foto">
+                <input type="checkbox" class="mapa__fotoLupa" title="Buscar">
+              </div>
+
+              <div class="mapa__contMap">
+                <iframe class="mapa__map"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12144.454949512336!2d-3.4700337499999994!3d40.45061955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1580728609105!5m2!1ses!2ses"
+                  width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="mapa__piePag">
+            <app-footer></app-footer>
+          </div>

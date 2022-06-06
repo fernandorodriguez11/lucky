@@ -1,0 +1,12 @@
+<div class="registro">
+    <h2 class="registro__h2">Tú perfil</h2>
+    <form class="col-xs col-md">
+
+        <app-formulario [usuarioNuevo]="usuarioEditado"></app-formulario>
+
+        <div>
+            <input type="submit" value="Editar" (click)= "editComponent()" class="registro__btn">
+        </div>
+    </form>
+
+</div>

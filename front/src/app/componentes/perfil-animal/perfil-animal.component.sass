@@ -1,0 +1,236 @@
+// LA SOLICITUD DE ADOPCIÓN ESTÁ ABAJO
+//LO SIENTO POR EL DESORDEN
+#pestana-datos
+    font-weight: bold
+    color: rgb(1,116,142)
+    border-bottom: 2px solid rgb(250,156,147)
+
+
+.perfil-animales h2
+    color: rgb(1, 116, 142)
+    font-weight: bold
+.perfil-animales
+    font-family: 'Barlow-Medium', sans-serif
+    height: 100%
+    margin-left: 4%
+
+    &__cabeza img
+    &__cabeza
+        height: 25vh
+        width: 90%
+        position: absolute
+    &__puntitos
+
+    &__iconitos
+
+    &__sexo
+        font-size: 0.7em
+        margin-top: 1em
+    &__nombre
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        background-color: white
+        border-radius: 3px
+        height: 4em
+        margin-top: -2em
+        margin-left: 18%
+        position: relative
+        padding-top: 1em
+        img
+            height: 2em
+            width: 2em
+    &__nn
+        font-weight: 700
+    &__nc
+        display: flex
+        flex-direction: column
+        justify-content: left
+        padding-left: 1em
+        padding-right: 1em
+    &__city
+        font-size: 0.7em
+    &__pestana
+        width: 30vw
+        text-align: center
+    &__personalidad
+        margin: 1em
+        margin-bottom: 0.5em
+    &__personalidades
+        margin-top: 0.7em
+        color: white
+
+    &__personalidades label
+        background-color: rgb(1, 116, 142)
+        border-radius: 20px
+        height: 2em
+        padding-right: 1em
+        padding-left: 1em
+        padding-top: 0.5em
+        padding-bottom: 0.5em
+        margin-right: 1em
+        margin-bottom: 0.7em
+        font-weight: 550
+    &__historia
+        padding-left: .3em
+        border: 1px solid rgb(189, 210, 214)
+        border-radius: 5px
+        width: 93%
+        margin-left: 0.3em
+        margin-bottom: 1em
+    &__historia1
+        height: 5em
+        margin-top: 3em
+    &__historiaX
+        margin-top: 4em
+    &__historia2
+        height: 4.5em
+
+    &__historia h2
+        margin-bottom: 0.5em
+        margin-top: 0.5em
+    &__historia p
+        margin-bottom: 0.5em
+    &__datos
+        margin-top: 2em
+    &__pie
+        // position: absolute
+        width: 70vw
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        // bottom: 3em
+        padding-top: 1em
+        padding-bottom: 2em
+    &__pie button
+        width: 25vw
+        height: 5vh
+        appearance: none
+    &__botonapadrinar
+        color: rgb(250,156,147)
+        background-color: white
+        border-style: none
+        border-radius: 5px
+        border: 2px solid rgb(250,156,147)
+
+    &__botonadoptar
+        color: white
+        background-color: rgb(250,156,147)
+        border-style: none
+        border-radius: 5px
+        border: 2px solid rgb(250,156,147)
+    &__filas1
+        margin-top: .5em
+
+.perfil-animales__menu
+    display: flex
+    justify-content: space-between
+    margin-right: 1.5em
+    // padding-top: 1.5em
+    // padding-bottom: 2em
+    height: 2em
+.perfil-animales__menu img
+    height: 1.5em
+    width: 1.5em
+    margin-top: -0.5em
+.perfil-animales__huellatexto
+    display: flex
+    flex-direction: row
+    justify-content: left
+.perfil-animales__huellatexto p
+    margin-left: 0.7em
+.perfil-animales__filas
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 2.5em
+    padding-left: .7em
+    padding-right: 1.3em
+.perfil-animales__filas img
+    height: 1.5em
+    width: 1.5em
+    margin-top: -0.5em
+
+.perfil-animales__salud
+    display: none
+    height: 100%
+    margin-top: 2em
+.perfil-animales__saberque
+    margin-left: 1em
+.perfil-animales__adopcion
+    display: none
+    margin-top: 2em
+
+// AQUÍ ESTÁ EL CSS DE LA VENTANA EMERGENTE (SOLICITUD DE ADOPCIÓN)
+.perfil-animales-solicitud
+    display: none
+    text-align:  center
+    background-color: #fff
+    background-size: contain
+    height: 35em
+    width: 95vw
+    border-radius: 8px
+    position: fixed
+    margin-left: 1em
+    font-family: 'Barlow-Medium', sans-serif
+
+    margin-top: 2em
+    padding-left:1.5em
+    padding-right: 1.5em
+    &__continuar
+        font-weight: bold
+        color: rgb(1, 116, 142)
+        padding-top: 2em
+    &__titulosolicitud
+        font-weight: lighter
+        font-size: 25px
+        color: rgb(1, 116, 142)
+        padding-bottom: 1em
+        padding-top: 2em
+        margin-left: -0.5em
+        margin-right: -0.5em
+    &__solicitudbotones
+        position: absolute
+        bottom: 0.5em
+        width: 100%
+        margin-left: -1.5em
+        border-top: 2px solid #c0bdbd
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+
+
+    &__cancelar
+        appearance: none
+        color: rgb(250,156,147)
+        font-weight: bold
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        background-color: white
+        padding-top: 0.7em
+        width: 50%
+        height: 2em
+        text-align: center
+        border-style: none
+        border-right: 0.5px solid #c0bdbd
+    &__aceptar
+        appearance: none
+        color: rgb(190, 190, 190)
+        font-weight: bold
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        background-color: white
+        padding-top: 0.7em
+        width: 50%
+        height: 2em
+        text-align: center
+        border-style: none
+        border-left: 0.5px solid #c0bdbd
+.perfil-animales-solicitud h2
+        font-weight: bold
+        color: rgb(1, 116, 142)
+
+.perfil-animales-solicitud p
+        padding-bottom: 2em

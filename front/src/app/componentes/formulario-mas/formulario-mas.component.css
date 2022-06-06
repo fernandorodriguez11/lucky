@@ -1,0 +1,127 @@
+.formu {
+  width: 100vw;
+  height: 100vh;
+  padding: 1em;
+}
+
+.formu__prueba {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.formu__barraPadre {
+  background-color: rgba(250, 156, 147, 0.35);
+  height: 7pt;
+  border-radius: 3.5pt;
+}
+
+.formu__barra {
+  background-color: #fa9c93;
+}
+
+.formu__titulo {
+  font-family: 'Barlow-Regular', sans-serif;
+  font-size: 16pt;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+}
+
+.formu__titulo img {
+  padding-right: 1em;
+}
+
+.formu__titulo p {
+  padding-top: 0.5em;
+}
+
+.formu__titulo2 {
+  font-family: 'Barlow-Medium', sans-serif;
+  font-size: 20pt;
+  text-align: left;
+  color: #01748e;
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.formu__btn {
+  width: 100%;
+  background: #fa9c93;
+  font-family: 'Barlow-Medium', sans-serif;
+  font-size: 16pt;
+  color: white;
+  margin-top: 1em;
+  border-radius: 5px;
+  border-style: none;
+  height: 40pt;
+}
+
+.formu__p {
+  font-family: 'Barlow-Regular', sans-serif;
+  font-size: 1.2em;
+  color: #0e363d;
+}
+
+.formu__inp {
+  margin: 1.5em;
+}
+
+.formu__inp__inp1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formu__prueba {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formu__prueba label {
+  font-family: 'Barlow-Regular', sans-serif;
+  font-size: 1em;
+  color: #0e363d;
+}
+
+.formu__letra {
+  width: 100%;
+  margin-top: 1em;
+  border-style: none;
+  border-bottom: 1px solid grey;
+  height: 3em;
+  font-family: 'Barlow-Regular', sans-serif;
+  font-size: 12pt;
+}
+
+.formu__letra1 {
+  width: 100%;
+  margin-top: 1em;
+  border-style: none;
+  border-bottom: 1px solid grey;
+  height: 2em;
+  font-family: 'Barlow-Regular', sans-serif;
+  font-size: 12pt;
+}
+
+.l1 {
+  padding-right: 1px;
+}
+
+.i1 {
+  margin-right: 2px;
+}
+/*# sourceMappingURL=formulario-mas.component.css.map */

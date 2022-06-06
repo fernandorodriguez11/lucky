@@ -1,0 +1,15 @@
+<div class="registro">
+    <h2 class="registro__h2">Registro de Usuario</h2>
+    <form class="col-xs col-md">
+
+        <app-formulario [usuarioNuevo]="usuarioNuevo" (propagarBlur)="alPerderFocoEmail()"></app-formulario>
+        <div class="registro_checkPriv">
+            <input type="checkbox" class="registro__check" required>
+            <label class="registro__privacidad"> Acepto los términos y conodiciones de registro.</label>
+        </div>
+        <div>
+            <input type="submit" value="Registrar" (click)="registroComponentClick()" class="registro__btn">
+        </div>
+    </form>
+
+</div>

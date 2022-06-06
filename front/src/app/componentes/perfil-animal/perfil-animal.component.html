@@ -1,0 +1,153 @@
+<div class="perfil-animales-solicitud col-xs-10" id="perfil-animal-adopcion">
+    <h2 class="perfil-animales-solicitud__titulosolicitud">Solicitud de adopción</h2>
+    <p>Adoptar es un acto de amor, pero sobre todo una responsabilidad de por vida</p>
+    <p>Por este motivo es importante que veas el siguiente vídeo donde te explicamos
+        cómo va a ser todo el proceso de adopción
+    </p>
+    <img src="../../../assets/imagenes/group5.png" alt="">
+    <p class="perfil-animales-solicitud__continuar">¿Quieres continuar el proceso de adopción?</p>
+    <div class="perfil-animales-solicitud__solicitudbotones">
+        <button (click)="cancelar()" class="perfil-animales-solicitud__cancelar">Cancelar</button>
+        <button class="perfil-animales-solicitud__aceptar" [routerLink]="['/formulario-mas']">Continuar</button>
+    </div>
+</div>
+<div class="perfil-animales" id="perfil-animal">
+  
+    <div class="perfil-animales__cabeza"></div>
+    <img src="{{perfilAnimal.foto}}" style="width: 100vw; height: 30vh; margin-left: -1em;" alt="">
+    <div class="perfil-animales__puntitos bottom-xs"></div>
+    <div class="perfil-animales__nombre col-xs-7" id="perfil-animal-nombre">
+        <img *ngIf="perfilAnimal.datos.sexo == 'Macho'" src="../../../assets/iconos/macho.jpg">
+        <img *ngIf="perfilAnimal.datos.sexo == 'Hembra'" src="../../../assets/iconos/hembra.png">  
+        <div class="perfil-animales__nc">
+            <p class="perfil-animales__nn">{{perfilAnimal.nombre}}</p>
+            <p class="perfil-animales__city">{{perfilAnimal.ciudad}}</p>
+        </div>
+        <div class="perfil-animales__iconitos">
+            <!-- <img src="../../../assets/iconos/compartir.png" alt="like"> -->
+            <img src="../../../assets/iconos/compartir.png" alt="descargar">
+        </div>
+    </div>
+
+    <div class="perfil-animales__menu">
+        <p (click)="oculta1()" id="pestana-datos" class="perfil-animales__pestana">Datos</p>
+        <p (click)="oculta2()" id="pestana-salud" class="perfil-animales__pestana">Salud</p>
+        <p (click)="oculta3()" id="pestana-adopcion" class="perfil-animales__pestana">Adopción</p>
+    </div>
+    <div id="animal-datos" class="perfil-animales__datos">
+        <div class="perfil-animales__filas perfil-animales__datos">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Especie</p>
+            </div>
+            <p >{{perfilAnimal.datos.tipo}}</p>
+        </div>
+        <div class="perfil-animales__filas ">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Fecha de nacimiento</p>
+            </div>
+            <p>{{perfilAnimal.datos.nacimiento}}</p>
+        </div>
+        <div class="perfil-animales__filas ">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Sexo</p>
+            </div>
+            <p>{{perfilAnimal.datos.sexo}}</p>
+        </div>
+        <div class="perfil-animales__filas ">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Tamaño</p>
+            </div>
+            <p>{{perfilAnimal.datos.tamano}}</p>
+        </div>
+        <div class="perfil-animales__filas ">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Peso</p>
+            </div>
+            <p>{{perfilAnimal.datos.peso}}</p>
+        </div>
+        <div class="perfil-animales__personalidad" >
+            <h2>Personalidad</h2>
+            <div class="perfil-animales__personalidades" >
+                    <label *ngFor="let personalidad of perfilAnimal.datos.personalidad; let i = index">{{personalidad}}</label>
+            </div>
+        </div>
+        <div class="perfil-animales__historia">
+            <h2>Historia</h2>
+            <p>{{perfilAnimal.datos.historia}}</p>
+        </div>
+
+    </div>
+    <div id="animal-salud" class="perfil-animales__salud">
+        <div class="perfil-animales__filas perfil-animales__filas1">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Vacunado</p>
+            </div>
+            <p>{{perfilAnimal.salud.vacunado}}</p>
+        </div>
+        <div class="perfil-animales__filas perfil-animales__filas1">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Desparasitado</p>
+            </div>
+            <p>{{perfilAnimal.salud.desparasitado}}</p>
+        </div>
+        <div class="perfil-animales__filas perfil-animales__filas1">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Sano</p>
+            </div>
+            <p>{{perfilAnimal.salud.sano}}</p>
+        </div>
+        <div class="perfil-animales__filas perfil-animales__filas1">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Esterilizado</p>
+            </div>
+            <p>{{perfilAnimal.salud.esterilizado}}</p>
+        </div>
+        <div class="perfil-animales__filas perfil-animales__filas1">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Identificado</p>
+            </div>
+            <p>{{perfilAnimal.salud.identificado}}</p>
+        </div>
+        <div class="perfil-animales__filas perfil-animales__filas1">
+            <div class="perfil-animales__huellatexto">
+                <img src="../../../assets/iconos/pawprint@2x.png" alt="huella">
+                <p>Microchip</p>
+            </div>
+            <p>{{perfilAnimal.salud.microchip}}</p>
+        </div>
+        <div class="perfil-animales__historia perfil-animales__historia2">
+            <h2>Tienes que saber que</h2>
+            <p></p>
+        </div>
+    </div>
+    <div id="animal-adopcion" class="perfil-animales__adopcion">
+        <div class="perfil-animales__historia perfil-animales__historia1 perfil-animales__historiaX">
+            <h2>Requisitos adopción</h2>
+            <p>{{perfilAnimal.requisitos.requisitos}}</p>
+        </div>
+        <div class="perfil-animales__historia perfil-animales__historia1">
+            <h2>Tasa adopción</h2>
+            <p>{{perfilAnimal.requisitos.tasa}}</p>
+        </div>
+        <div class="perfil-animales__historia perfil-animales__historia1">
+            <h2>¿Se envía a otra ciudad?</h2>
+            <p>{{perfilAnimal.requisitos.envio}}</p>
+        </div>
+
+    </div>
+    <div class="perfil-animales__pie col-xs-8 col-xs-offset-2">
+        <button class="perfil-animales__botonapadrinar">Apadrinar</button>
+        <button (click)="adopta()" class="perfil-animales__botonadoptar">Adoptar</button>
+    </div>
+
+</div>

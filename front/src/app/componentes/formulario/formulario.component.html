@@ -1,0 +1,35 @@
+
+    <div>
+        <p class="registro__p">Tus datos</p>
+    </div>
+    <div class="registro__grupo">
+        <input name="nombre" class="registro__entrada" type="text" placeholder="Nombre" [(ngModel)]= "usuarioNuevo.nombre"  required>
+    </div>
+    <div class="registro__grupo">
+        <input name="apellidos" class="registro__entrada" type="text" placeholder="Apellidos" [(ngModel)]= "usuarioNuevo.apellidos" required>
+    </div>
+    <div class="registro__grupo">
+        <input name="edad" class="registro__entrada" type="number" placeholder="Edad" [(ngModel)]= "usuarioNuevo.edad" required>
+    </div>
+    <div class="registro__grupo">
+        <input name="dni" class="registro__entrada" type="text" placeholder="DNI" [(ngModel)]= "usuarioNuevo.dni" required>
+    </div>
+    <div class="registro__grupo">
+        <input name="tlf" class="registro__entrada" type="text" placeholder="Telefono" [(ngModel)]= "usuarioNuevo.telefono" required>
+    </div>
+    <div class="registro__grupo">
+        <input name="email" class="registro__entrada" type="text" placeholder="Email" [(ngModel)]= "usuarioNuevo.email" required
+                (blur)= "alPerderFocoEmail()">         
+    </div>
+    <div>
+        <p class="registro__p">Tu dirección</p>
+    </div>
+    <div class="registro__grupo">
+        <input  name="ciudad" class="registro__entrada" type="text" placeholder="Ciudad" [(ngModel)]= "usuarioNuevo.ciudad" required>
+    </div>
+    <div class="registro__grupo">
+        <input  name="codigoPostal" class="registro__entrada" type="number" placeholder="Código postal" [(ngModel)]= "usuarioNuevo.cp" required>
+    </div>
+    <div class="registro__grupo">
+        <input name="password" class="registro__entrada" type="password" placeholder="Contraseña" [(ngModel)]= "usuarioNuevo.password" required>
+    </div>

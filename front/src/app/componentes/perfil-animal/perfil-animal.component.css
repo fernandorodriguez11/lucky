@@ -1,0 +1,259 @@
+#pestana-datos {
+  font-weight: bold;
+  color: #01748e;
+  border-bottom: 2px solid #fa9c93;
+}
+
+.perfil-animales h2 {
+  color: #01748e;
+  font-weight: bold;
+}
+
+.perfil-animales {
+  font-family: 'Barlow-Medium', sans-serif;
+  height: 100%;
+}
+
+.perfil-animales__cabeza {
+  height: 25vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.perfil-animales__iconitos {
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.perfil-animales__sexo {
+  padding-top: 1em;
+}
+
+.perfil-animales__nombre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: white;
+  border-radius: 3px;
+  height: 4em;
+  margin-top: -2em;
+  margin-left: 21%;
+}
+
+.perfil-animales__nc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 1em;
+}
+
+.perfil-animales__city {
+  font-size: 12px;
+}
+
+.perfil-animales__pestana {
+  width: 30vw;
+  text-align: center;
+}
+
+.perfil-animales__personalidad {
+  margin: 1em;
+}
+
+.perfil-animales__personalidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-top: 1em;
+  color: white;
+}
+
+.perfil-animales__personalidades p {
+  background-color: #01748e;
+  border-radius: 20px;
+  height: 2em;
+  width: auto;
+  padding-right: 2em;
+  padding-left: 2em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+.perfil-animales__historia {
+  padding-left: 0.5em;
+  border: 1px solid #bdd2d6;
+  border-radius: 5px;
+  width: 93%;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+}
+
+.perfil-animales__historia h2 {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.perfil-animales__historia p {
+  margin-bottom: 0.5em;
+}
+
+.perfil-animales__datos {
+  margin-top: 2em;
+}
+
+.perfil-animales__pie {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.perfil-animales__pie button {
+  width: 25vw;
+  height: 5vh;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.perfil-animales__botonapadrinar {
+  color: #fa9c93;
+  background-color: white;
+  border-style: none;
+  border-radius: 5px;
+  border: 2px solid #fa9c93;
+}
+
+.perfil-animales__botonadoptar {
+  color: white;
+  background-color: #fa9c93;
+  border-style: none;
+  border-radius: 5px;
+  border: 2px solid #fa9c93;
+}
+
+.perfil-animales__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 2em;
+}
+
+.perfil-animales__menu img {
+  height: 1.5em;
+  width: 1.5em;
+  margin-top: -0.5em;
+}
+
+.perfil-animales__huellatexto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.perfil-animales__huellatexto p {
+  margin-left: 0.7em;
+}
+
+.perfil-animales__filas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 2.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.perfil-animales__filas img {
+  height: 1.5em;
+  width: 1.5em;
+  margin-top: -0.5em;
+}
+
+.perfil-animales__salud {
+  display: none;
+  height: 100%;
+  margin-top: 2em;
+}
+
+.perfil-animales__saberque {
+  margin-left: 1em;
+}
+
+.perfil-animales__adopcion {
+  display: none;
+  margin-top: 2em;
+}
+
+.perfil-animales__solicitud {
+  text-align: center;
+  background-color: white;
+  height: 80vh;
+  width: 95vw;
+  border-radius: 8px;
+}
+
+.perfil-animales__continuar {
+  font-weight: bold;
+  color: #01748e;
+}
+/*# sourceMappingURL=perfil-animal.component.css.map */
